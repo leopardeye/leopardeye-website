@@ -304,9 +304,10 @@ header {
 .footer-social {
     width: 30px;
     opacity: .9;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-bottom: .5rem;
+    margin: 2rem .5rem .5rem .5rem;
+    /* margin-top: 2rem; */
+    /* margin-left: 1rem; */
+    /* margin-bottom: .5rem; */
     /* fill: var(--col-light); */
 }
 
