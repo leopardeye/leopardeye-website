@@ -1,11 +1,13 @@
 :root {
-    --col-dark: hsl(24, 4%, 26%);
+    --col-dark: hsl(24, 4%, 25%);
     --col-light: hsl(47, 8%, 90%);
     --col-1: hsl(357, 60%, 35%);
     --col-2: hsl(47, 8%, 76%);
     --col-3: hsl(171, 10%, 40%);
     --col-4: hsl(42, 30%, 50%);
     --col-5: hsl(50, 0%, 50%);
+    --col-6: hsl(19, 69%, 27%);
+    --col-7: hsl(24, 4%, 15%);
     --san-serif-fam: 'Roboto Condensed', sans-serif;
     --serif-fam: 'Playfair Display', serif;
 
@@ -40,8 +42,8 @@
 .sub-head {
     font-family: var(--serif-fam);
     text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 200;
+    font-size: 1.5rem;
+    font-weight: 600;
     letter-spacing: .2rem;
     color: var(--col-4);
 }
@@ -52,7 +54,7 @@
     font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: .2rem;
-    color: var(--col-4);
+    color: var(--col-6);
 }
 
 .sub-head-1-dark {
@@ -61,7 +63,7 @@
     font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: .2rem;
-    color: var(--col-dark);
+    color: var(--col-7);
 }
 
 
@@ -871,7 +873,7 @@ header {
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: .2rem .2rem .3rem rgba(0, 0, 0, 0.3);
+    box-shadow: .2rem .2rem .3rem rgba(0, 0, 0, 0.2);
 }
 
 .profile-photos {
@@ -882,8 +884,33 @@ header {
     gap: .5rem;
     border-radius: ;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: show;
 }
+
+.profile-photos-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    max-width: 400px;
+    gap: .5rem;
+    border-radius: ;
+    margin: 2rem auto 4rem auto;
+    overflow: show;
+}
+
+
+.insert800img {
+    width: 80vw;
+    max-width: 800px;
+    margin: 4rem auto 2rem auto;
+}
+
+.insert800img>img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.2);
+}
+
 
 /* accordian styling */
 
@@ -894,7 +921,12 @@ header {
 }
 
 .accordian-content p {
+    font-family: var(--san-serif-fam);
     text-align: left;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: .04rem;
+    line-height: 1.6rem;
 }
 
 .accordian li {
@@ -911,9 +943,11 @@ header {
     align-items: center;
     padding: 10px;
     cursor: pointer;
-    font-family: var(--san-serif-fam);
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-family: var(--serif-fam);
+    color: var(--col-6);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .04rem;
 }
 
 label::before {
@@ -930,11 +964,11 @@ input[type="radio"] {
     line-height: 1.3rem;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 500ms, padding 500ms;
+    transition: max-height 1000ms, padding 1000ms;
 }
 
 .accordian input[type="radio"]:checked + label + .accordian-content {
-    max-height: 600px;
+    max-height: 800px; padding: 10px;
 }
 
 .accordian input[type="radio"]:checked + label::before {
