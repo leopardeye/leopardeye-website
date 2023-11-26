@@ -127,6 +127,33 @@ window.addEventListener('scroll', function(){
 
 // move - up and down of logo start
 
+// carosel img change
+// window.addEventListener('resize', function() {
+//   if (window.innerWidth >= 1025) {
+//       document.getElementById('carosel_image-1').src = './Asssets/Images/lep-brandberg-2-1920.jpg';
+//       document.getElementById('carosel_image-2').src = './Asssets/Images/lep-dune-pan-2.jpg';
+//       document.getElementById('carosel_image-3').src = './Asssets/Images/lep-popafalls-1.jpg';
+//       document.getElementById('carosel_image-4').src = './Asssets/Images/lep-dune-pan-1.jpg';
+//       document.getElementById('carosel_image-5').src = './Asssets/Images/lep-swakop-jetty.jpg';
+//   }
+// });
+
+function changeImages() {
+  if (window.innerWidth >= 1025) {
+      document.getElementById('carosel_image-1').src = './Asssets/Images/lep-brandberg-2-1920.jpg';
+      document.getElementById('carosel_image-2').src = './Asssets/Images/lep-dune-pan-2.jpg';
+      document.getElementById('carosel_image-3').src = './Asssets/Images/lep-popafalls-1.jpg';
+      document.getElementById('carosel_image-4').src = './Asssets/Images/lep-dune-pan-1.jpg';
+      document.getElementById('carosel_image-5').src = './Asssets/Images/lep-swakop-jetty.jpg';
+  }
+}
+
+// Call the function as soon as the page loads
+changeImages();
+
+// Call the function every time the window is resized
+window.addEventListener('resize', changeImages);
+
 // carosel script
 
 
