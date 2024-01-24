@@ -383,7 +383,6 @@ header {
 }
 
 .carosel_track-container {
-    /* background-color: green; */
     height: 40vh;
     position: relative;
 }
@@ -859,6 +858,8 @@ header {
     border-radius: 10px;
     margin-left: 5px;
     margin-right: 5px;
+    transition: ease-in-out 500ms;
+
 }
 
 .full-width-img-accordian .acc-1 {
@@ -880,6 +881,7 @@ header {
 
 .full-width-img-accordian>img:hover {
     width: 40vh;
+    transition: ease-in-out 500ms;
 }
 
 .full-width-1 {
