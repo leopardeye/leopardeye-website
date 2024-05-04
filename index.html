@@ -4,170 +4,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <title>Leopard-Eye Photography</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
 </head>
 
 <body>
-
     <header>
-        <div class="title-logo-container">
-            <a href="./index.html"><div class="title-logo"><img src="./Asssets/Icons/lep-logo-1.svg" alt=""></div></a>
-            <div class="hamburger">
-                <div class="tl-1"></div>
-                <div class="tl-2"></div>
-                <div class="tl-3"></div>
+        <div class="site-logo">
+    <a href="/index.html"><img src="/assets/vectors/lep-logo.svg" alt=""></a>
+</div>
+
+<button class="hamburger-menu">
+    <span class="hamburger-menu-1"></span>
+    <span class="hamburger-menu-2"></span>
+    <span class="hamburger-menu-3"></span>
+</button>
+
+<div class="main-menu">
+    <ul>
+        <li><a href="/introduction/">An Introduction</a></li>
+        <li><a href="/portfolio/">Landscape & Wildlife</a></li>
+        <li><a href="/commercial/">Commercial Portfolio</a></li>
+        <li><a href="/about/">Behind the Lense</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/blog/">News</a></li>
+    </ul>
+</div>
+    </header>
+
+    
+<section class="hero-container">
+
+    <div class="hero-image-wrapper">
+        <img class="landing-hero-pos" srcset="
+        /assets/images/lep-landing-page/lep-landing-hero-520.jpg 520w,
+        /assets/images/lep-landing-page/lep-landing-hero-960.jpg 960w,
+        /assets/images/lep-landing-page/lep-landing-hero-1920.jpg 1920w,
+        /assets/images/lep-landing-page/lep-landing-hero-2048.jpg 2048w,
+        /assets/images/lep-landing-page/lep-landing-hero-2560.jpg 2560w,
+        /assets/images/lep-landing-page/lep-landing-hero-3840.jpg 3840w"
+            src="/assets/images/lep-landing-page/lep-landing-hero-3840.jpg"
+            alt="
+        Abstract Monochrome Landscape: A striking black and white photograph showcasing the delicate interplay of light and shadow over the vegetation and undulating patterns of the Namib dunes.">
+    </div>
+
+    <div class="hero-content-wrapper">
+
+        <div class="hero-insert-image-wrapper">
+            <div class="hero-insert-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-insert-1-crop-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-insert-1-crop-960.jpg 960w,
+                /assets/images/lep-landing-page/lep-landing-insert-1-crop-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-insert-1-crop-1920.jpg"
+                    alt="Himba Culinary Tradition: A Himba woman from northern Namibia enveloped in the aromatic smoke of a traditional cooking fire, showcasing the rich cultural heritage.">
+            </div>
+            <div class="hero-insert-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-insert-2-crop-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-insert-2-crop-960.jpg 960w,
+                /assets/images/lep-landing-page/lep-landing-insert-2-crop-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-insert-2-crop-1920.jpg"
+                    alt="Deadvlei's Timeless Beauty: A captivating black and white image of Deadvlei's iconic dead camel thorn trees, set against the stark, cracked clay pan and framed by the towering dunes of Namib-Naukluft Park.">
+            </div>
+            <div class="hero-insert-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-insert-3-crop-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-insert-3-crop-960.jpg 960w,
+                /assets/images/lep-landing-page/lep-landing-insert-3-crop-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-insert-3-crop-1920.jpg"
+                    alt="Etosha's Young Predator: A detailed portrait of a young lion cub in Etosha National Park, showcasing its spotted fur and curious gaze amidst the wild grasses of the African savannah.">
             </div>
         </div>
 
-        <div class="menu" id="menu-nav">
-            <ul>
-                <li><a href="./public/intro.html">Introduction</a></li>
-                <li><a href="./public/portfolio.html">Landscapes & Wildlife</a></li>
-                <li><a href="./public/commercial.html">Commercial Portfolio</a></li>
-                <li><a href="./public/about.html">About</a></li>
-                <li><a href="./public/contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
+        <div class="header-wrapper">
+            <h1 class="hero-h2">Discover nature's primal allur,</h1>
 
-    <!-- body portion -->
-
-    <div class="hero"></div>
-    <div class="hero-insert-container">
-        <img class="hero-insert" src="./Asssets/Images/lep-himba-lady-2-600.jpg" alt="">
-        <img class="hero-insert" src="./Asssets/Images/lep-deadvlei-1-600x600.jpg" alt="">
-        <img class="hero-insert" src="./Asssets/Images/lep-lion-cub-2-600x600.jpg" alt="">
-    </div>
-
-    <div class="hero-text">
-        <h1 class="main-head">Namibia Unveiled</h1>
-        <h2 class="main-subhead">A Photographic Odyssey into Untamed Beauty</h2>
-        <p>Embark on an immersive visual odyssey through the untouched landscapes of Namibia with Roy van der Merwe, a seasoned photographer and explorer. Delve into the raw beauty of Namibia's remote and unspoiled terrains, captured through the lens during the enchanting blue hour. From panoramic vistas to the captivating habits of African wildlife, each photograph tells a story of the country's untamed splendor.<br><br> Join us in uncovering the secrets of Namibia's wilderness, where every frame is a testament to the unparalleled allure of this extraordinary land. Through Leopard Eye Photography, we invite you to experience Namibia like never before and, in doing so, become a part of the journey to preserve its natural wonders. Welcome to a photographic exploration that goes beyond the lens - it's a celebration of Namibia's pristine landscapes and a preview of the unforgettable safaris to come.</p>
-    </div>
-
-    <div class="carosel">
-        <button class="carosel_button carosel_button--left"><img src="./Asssets/Icons/carosel-nav-left.svg"
-                alt=""></button>
-        <div class="carosel_track-container">
-            <ul class="carosel_track">
-                <li class="carosel_slide">
-                    <img class="carosel_image" id="carosel_image-1" src="./Asssets/Insert-images/lep-deadvlei-carosel-mobile.jpg" alt="">
-                </li>
-                <li class="carosel_slide">
-                    <img class="carosel_image" id="carosel_image-2" src="./Asssets/Insert-images/lep-dunes-2-carosel-mobile.jpg" alt="">
-                </li>
-                <li class="carosel_slide">
-                    <img class="carosel_image" id="carosel_image-3" src="./Asssets/Insert-images/lep-brandberg-3-carosel-mobile.jpg" alt="">
-                </li>
-                <li class="carosel_slide">
-                    <img class="carosel_image" id="carosel_image-4" src="./Asssets/Insert-images/lep-swakopmund-carosel-mobile.jpg" alt="">
-                </li>
-                <li class="carosel_slide">
-                    <img class="carosel_image" id="carosel_image-5" src="./Asssets/Insert-images/lep-leopard-carosel-mobile.jpg" alt="">
-                </li>
-            </ul>
-        </div>
-        <button class="carosel_button carosel_button--right"><img src="./Asssets/Icons/carosel-nav-right.svg"
-                alt=""></button>
-
-        <div class="carosel_nav">
-            <button class="carosel_indicator current-slide"></button>
-            <button class="carosel_indicator"></button>
-            <button class="carosel_indicator"></button>
-            <button class="carosel_indicator"></button>
-            <button class="carosel_indicator"></button>
+            <div class="header-wrapper-content">
+                <h2 class="hero-h1">pristine wilderness</h2>
+                <h3 class="hero-h3">& remarkable wildlife</h3>
+            </div>
         </div>
 
     </div>
 
-    <div class="hero-text-2">
-        <h2 class="main-head">overview</h2>
-        <h3 class="sub-subhead">Welcome to Leopard Eye</h3>
-        <p>Welcome to the heart of Namibia, where the raw beauty of the wilderness unfolds like a captivating story waiting to be told. This overview is your gateway to a realm where photography, art, and conservation converge, creating a narrative that transcends visual exploration.<br><br> Join us on a journey into the untamed landscapes, abstract expressions, and conservation endeavors that define Leopard Eye Photography. Here, each frame is a brushstroke, each click of the shutter a chapter, and every stroke of the pencil a testament to the extraordinary tapestry of Namibia.<br><br> Explore with us, for the essence of this land beckons, inviting you to witness, appreciate, and become a part of its timeless tale.</p>
+</section>
+
+<section class="full-width-image-container ">
+    <div class="full-width-img">
+        <img class="animate-fade" srcset="
+        /assets/images/lep-landing-page/lep-landing-2-520.jpg 520w,
+        /assets/images/lep-landing-page/lep-landing-2-960.jpg 960w,
+        /assets/images/lep-landing-page/lep-landing-2-1920.jpg 1920w,
+        /assets/images/lep-landing-page/lep-landing-2-2048.jpg 2048w,
+        /assets/images/lep-landing-page/lep-landing-2-2560.jpg 2560w,
+        /assets/images/lep-landing-page/lep-landing-2-3840.jpg 3840w"
+            src="/assets/images/lep-landing-page/lep-landing-2-3840.jpg"
+            alt="Brandberg Vista: A breathtaking panoramic view from atop Brandberg, capturing the distant silhouette of Spitzkoppe against the horizon, the ethereal mist rolling in from the Atlantic Ocean, and the unique landscape of the Hungorob Platen.">
+    </div>
+</section>
+
+<section class="body-container">
+    <div class="body-content-wrapper">
+        <h2 class="h-2">
+            Unveiling Namibia's Untamed Splendor
+            Witness the Primal Mystery of Landscape, Wildlife & Nature's Majesty
+        </h2>
+        <p class="p-body">
+            Welcome to Leopard Eye Photography, my portrayal of Namibia's untamed splendour. Here, I
+            invite you to a visual odyssey through a land where ancient landscapes meet diverse wildlife. Through my
+            lens, I unveil the primal mystery of Namibia's wilderness. Witness the vast, star-studded night skies
+            stretching over endless plains. Let's marvel at the dramatic silhouettes of towering dunes sculpted by
+            relentless winds and be captivated by the creatures that roam free in this pristine environment. My
+            photographs are more than breathtaking vistas; they celebrate nature's artistry. I strive to evoke emotions,
+            ignite curiosity, and inspire a deeper appreciation for the delicate balance of the natural world.<br><br>
+
+            Leopard Eye Photography is more than just me capturing awe-inspiring visuals. It's my voice for Namibia's
+            wilderness. I delve into the challenges facing African conservation efforts, advocating for a more inclusive
+            approach that empowers local communities. Proper conservation fosters a connection between people and
+            nature, ensuring a future where Namibia's untamed splendour thrives for generations to come. Embark on a
+            journey of discovery with me. Explore Namibia's captivating beauty, witness the wonders that lie beneath the
+            surface, and become a part of the Leopard Eye legacy. Join my community and contribute to the preservation
+            of Namibia's untamed splendour.
+        </p>
     </div>
 
-    <div class="three-col">
-        <div class="three-col-layout">
-            <img class="three-col-img" src="./Asssets/Graphics/lep-photo-graphic.svg" alt="">
-            <h4 class="sub-subhead">Capturing Namibia's Essence <br>Through the Lens</h4>
-            <p>Immerse yourself in the visual symphony of Namibia, where every click of the shutter is a brushstroke painting a portrait of untamed beauty. Our photography takes you beyond images; it's a journey into the heart of landscapes, wildlife, and moments frozen in time.</p>
-            <a href="./public/portfolio.html#landscape-portfolio"><button class="button-small" id="bt-s" name="find out more">Find out more</button></a>
+    <div class="body-content-wrapper-1 clip">
+        <div class="header-wrapper-content">
+            <h3 class="hero-h1-1 center-text">safari</h3>
+            <p class="hero-h5">- a Swahili word for journey -</p>
+
         </div>
-        <div class="three-col-layout">
-            <img class="three-col-img-1" src="./Asssets/Graphics/lep-art-graphic.svg" alt="">
-            <h4 class="sub-subhead">Abstract Expressions of <br>Namibian Wildlife</h4>
-            <p>Explore the wild through a different lens—pencil strokes that dance on paper. Our abstract wildlife art invites you to witness the spirit of Namibia in a surreal, imaginative way. Each piece tells a story, born from childhood sketches and a unique evolution.</p>
-            <a href="./public/portfolio.html#artwork-portfolio"><button class="button-small" id="bt-s" name="find out more">Find out more</button></a>
-        </div>
-        <div class="three-col-layout">
-            <img class="three-col-img" src="./Asssets/Graphics/lep-conservation-graphic.svg" alt="">
-            <h4 class="sub-subhead">Safeguarding Namibia's <br>Natural Heritage</h4>
-            <p>More than photographs and art, our work carries a mission. Join us in the commitment to conservation—preserving, protecting, and fostering a deep appreciation for Namibia's pristine wilderness. Every image, every stroke, is a call to safeguard the heart of Africa.</p>
-            <a href="./public/about.html"><button class="button-small" id="bt-s" name="find out more">Find out more</button></a>
+        <p class="p-body-c italic-text">
+            For its not the destination what is of importance, its the process that's all
+            encompasing
+        </p>
+    </div>
+
+    <div class="body-content-wrapper">
+        <div class="bar-img-wrapper">
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-1-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-1-960.jpg 960w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-1-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-1-1920.jpg"
+                    alt="Resilient Young Predator: An intimate glimpse of a lion cub's life in Etosha National Park, bearing the marks of spirited play with a visible wound on its abdomen, set against the backdrop of Namibia,s rugged wilderness.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-2-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-2-960.jpg 960w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-2-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-2-1920.jpg"
+                    alt="Starry Night Over Rossing Mountain: A mesmerizing astro photograph capturing the swirling star trails and a silhouetted figure against the rugged terrain of Rossing Mountain, embodying the harmony between earth and cosmos.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-3-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-3-960.jpg 960w
+                /assets/images/lep-landing-page/lep-landing-selection-1-3-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-3-1920.jpg"
+                    alt="Young Himba Life: A candid moment capturing a young Himba boy adorned with traditional jewelry, his skin glistening in the Namibian sun, reflecting the vibrant culture and heritage of his people.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-4-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-4-960.jpg 960w
+                /assets/images/lep-landing-page/lep-landing-selection-1-4-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-4-1920.jpg"
+                    alt="Majestic leopard in natural habitat during golden hour, showcasing intricate spot patterns and focused gaze as it navigates the thickets surrounding the grasslands.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-5-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-5-960.jpg 960w
+                /assets/images/lep-landing-page/lep-landing-selection-1-5-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-5-1920.jpg"
+                    alt="Portrait of a young Himba child adorned with traditional jewelry, showcasing the cultural heritage of northern Namibia.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-6-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-6-960.jpg 960w
+                /assets/images/lep-landing-page/lep-landing-selection-1-6-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-6-1920.jpg"
+                    alt="Starry night over the Skeleton Coast, with a clear view of the Milky Way illuminating the rocky landscape and sand dunes, no mist in sight.">
+            </div>
+            <div class="bar-img">
+                <img srcset="
+                /assets/images/lep-landing-page/lep-landing-selection-1-7-520.jpg 520w,
+                /assets/images/lep-landing-page/lep-landing-selection-1-7-960.jpg 960w
+                /assets/images/lep-landing-page/lep-landing-selection-1-7-1920.jpg 1920w"
+                    src="/assets/images/lep-landing-page/lep-landing-selection-1-7-1920.jpg"
+                    alt="Steenbok in Etosha: A Glimpse into Namibia's Wild Heart">
+            </div>
         </div>
     </div>
 
-    <div class="full-width-img-accordian">
-        <img class="acc-1" src="./Asssets/Images/lep-lion-cub-800x800.jpg" alt="">
-        <img class="acc-2" src="./Asssets/Images/lep-wailing-skip-800x800.jpg" alt="">
-        <img class="acc-3" src="./Asssets/Images/lep-himba-boy-800x800.jpg" alt="">
-        <img class="acc-4" src="./Asssets/Images/lep-leopard-1-800x800.jpg" alt="">
-        <img class="acc-5" src="./Asssets/Images/lep-himba-boy-2-800x800.jpg" alt="">
-        <img class="acc-6" src="./Asssets/Images/lep-quiver-tree2-800x800.jpg" alt="">
-        <img class="acc-7" src="./Asssets/Images/lep-steenbok-800x800.jpg" alt="">
+    <div class="body-content-wrapper">
+        <h2 class="h-2">
+            Depicting the Untamed: Challenging the Narrative<br>
+            A Photographic Odyssey into Untamed and Surreal Simplicity
+        </h2>
+        <p class="p-body">
+            Here, I offer you a visual expedition that stands out, a unique portal that sparks a passion for adventure
+            and challenges conventional views. My lens bypasses the usual travel photography tropes, the curated
+            landscapes and staged wildlife encounters. Instead, I venture deep into the heart of Namibia's untamed
+            splendour, capturing its raw beauty and the inherent simplicity with which nature thrives. This isn't just
+            about captivating visuals; it's a call to action. I am convinced that awe-inspiring images can awaken a
+            thirst for adventure, a longing to explore the last vestiges of our planet's untouched wilderness. With its
+            expansive, unspoiled terrains, Namibia provides a glimpse into a world unmarred by rampant development.
+            Here, the wilderness remains wild, a striking counterpoint to the often-blighted landscapes we encounter
+            elsewhere.<br><br>
+
+            But my purpose goes beyond showcasing beauty. I want to inspire a generation of critical thinkers who
+            question how we approach conservation. Are the current methods genuinely effective, or are there more
+            sustainable, community-driven approaches that can ensure the long-term health of these precious wild places?
+            Join me on this visual odyssey. Let my photographs invite you to explore, contemplate, and become a steward
+            of the natural world. Let's reimagine conservation and ensure a future where these untamed landscapes remain
+            a source of wonder and inspiration for generations.
+        </p>
+    </div>
+
+    <div class="body-content-wrapper-2">
+        <div class="art-img animate-scale">
+            <img srcset="
+            /assets/images/lep-landing-page/lep-landing-artwork-1-520.jpg 520w,
+            /assets/images/lep-landing-page/lep-landing-artwork-1-960.jpg 960w,
+            /assets/images/lep-landing-page/lep-landing-artwork-1-1920.jpg 1920w,
+            /assets/images/lep-landing-page/lep-landing-artwork-1-2048.jpg 2048w,
+            /assets/images/lep-landing-page/lep-landing-artwork-1-2560.jpg 2560w,
+            /assets/images/lep-landing-page/lep-landing-artwork-1-3840.jpg 3840w"
+                src="/assets/images/lep-landing-page/lep-landing-artwork-1-3840.jpg"
+                alt="Intricate pencil sketch of a vibrant bee-eater bird perched gracefully on a rugged branch, highlighting the bird's slender form and detailed plumage.">
+        </div>
+    </div>
+
+    <div class="body-content-wrapper">
+        <div class="card-wrapper">
+            <div class="card1-content">
+                <div class="card1-image">
+                    <img class="card-img-1" src="/assets/vectors/photography-01.svg" alt="line art graphic of a camera">
+                </div>
+                <h3 class="h-3">Capturing Namibia's Essence
+                    Through the Lens</h3>
+                <p class="p-card">
+                    Immerse yourself in the visual symphony of Namibia, where every click of the shutter is a
+                    brushstroke painting a portrait of untamed beauty. My photography takes you beyond images; it's a
+                    journey into the heart of landscapes, wildlife, and moments frozen in time.
+                </p>
+                <button class="btn-1">discover</button>
+            </div>
+            <div class="card1-content">
+                <div class="card1-image">
+                    <img class="card-img-2" src="/assets/vectors/art-01.svg"
+                        alt="line art graphic of a hand drawing with a pencil">
+                </div>
+                <h3 class="h-3">Abstract Expressions
+                    of Namibian Wildlife</h3>
+                <p class="p-card">
+                    Explore the wild through a different lens—pencil strokes that dance on paper. My abstract wildlife
+                    art invites you to witness the spirit of Namibia in a surreal, imaginative way. Each piece tells a
+                    story, born from childhood sketches and a unique evolution.
+                </p>
+                <button class="btn-1">discover</button>
+            </div>
+            <div class="card1-content">
+                <div class="card1-image">
+                    <img class="card-img-3" src="/assets/vectors/conservation-01.svg"
+                        alt="line art graphic of a falcon">
+                </div>
+                <h3 class="h-3">Safeguarding Namibia's
+                    Natural Heritage</h3>
+                <p class="p-card">
+                    More than photographs and art, my work and ideals carries a mission. Join us in the commitment to
+                    conservation, protecting, and fostering a deep appreciation for the last outposts of pristine
+                    wilderness. Every image, every stroke, is a call to safeguard the heart of Africa.
+                </p>
+                <button class="btn-1">discover</button>
+            </div>
+
+        </div>
 
     </div>
+</section>
+<section class="full-width-image-container fwi-space-2">
+    <div class="full-width-img-1">
+        <img class="landing-bottom-pos animate-fade" srcset="
+        /assets/images/lep-landing-page/lep-landing-3-520.jpg 520w,
+        /assets/images/lep-landing-page/lep-landing-3-960.jpg 960w,
+        /assets/images/lep-landing-page/lep-landing-3-1920.jpg 1920w,
+        /assets/images/lep-landing-page/lep-landing-3-2048.jpg 2048w,
+        /assets/images/lep-landing-page/lep-landing-3-2560.jpg 2560w,
+        /assets/images/lep-landing-page/lep-landing-3-3840.jpg 3840w"
+            src="/assets/images/lep-landing-page/lep-landing-3-3840.jpg"
+            alt="Abandoned whaling ship wreck on Namibia's Skeleton Coast, captured at sunset with vibrant sky colors reflecting over golden sands, symbolizing nature's reclaiming of human artifacts.">
+    </div>
+</section>
 
     <footer>
+        <div class="footer-bar-top"></div>
 
-        <div class="footer-line"></div>
+<div class="footer-content-wrapper">
 
-        <div class="footer-body">
-                <div class="footer-nav">
-                    <a href="./public/intro.html">Introduction</a>
-                    <a href="./public/portfolio.html">Landscape & Wildlife</a>
-                    <a href="./public/commercial.html">Commercial Portfolio</a>
-                    <a href="./public/about.html">About</a>
-                    <a href="./public/contact.html">Contact</a>
-                </div>
+    <div class="social-links">
+        <div class="social-link-item">
+            <img src="/assets/vectors/lep-instagram-social-icon.svg" alt="">
+        </div>
+        <div class="social-link-item">
+            <img src="/assets/vectors/lep-facebook-social-icon.svg" alt="">
+        </div>
+        <div class="social-link-item">
+            <img src="/assets/vectors/lep-whatsapp-social-icon.svg" alt="">
+        </div>
+        <div class="social-link-item">
+            <img src="/assets/vectors/lep-youpic-social-icon.svg" alt="">
+        </div>
+        <div class="social-link-item">
+            <img src="/assets/vectors/lep-x-social-icon.svg" alt="">
+        </div>
+    </div>
 
-                <hr>
+    <div class="lep-details-wrapper">
+        <div class="lep-footer-contact">
+            <img src="/assets/vectors/lep-logo.svg" alt="">
+            <div>
+                <a href="mailto:roy@leopard-eye.com">email: roy@leopard-eye.com</a>
 
-                <div>
-                    <a href="https://www.facebook.com/Leopard.eye.art" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-facebook.svg" alt="FaceBook link"></a>
-                    <a href="https://twitter.com/Leopardeye" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-twitter.svg" alt="Twitter link"></a>
-                    <a href="https://www.instagram.com/leopardeyephotography/" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-instagram.svg" alt="Instagram Link"></a>
-                    <a href="https://wa.me/+264811240584" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-whatsap.svg" alt="WhatsApp link"></a> 
-                    <a href="https://youpic.com/Leopardeye/" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-youpic.svg" alt="YouPic link"></a>
-                    <a href="https://www.linkedin.com/in/roy-van-der-merwe-4b875b223/" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-linkedin.svg" alt="LinkerIn link"></a>
-                    <a href="https://www.threads.net/@leopardeyephotography" target="_blank" rel="noopener noreferrer"><img class="footer-social" src="./Asssets/Icons/lep-social-threads.svg" alt="Threads link"></a>
-                </div>
-
-                <div class="footer-contact">
-                    <a href="mailto:roy@leopard-eye.com">roy@leopard-eye.com</a> 
-                    <span> / </span>
-                    <a href="tel:+264811240584">Cell: +264 81 124 0584</a>
-                </div>
-
-                <hr>
-
-                <p>copyright © 2023 Roy van Der Merwe</p>
+                <a href="tel:+264811240584">Cell: +264 81 124 0584</a>
+            </div>
         </div>
 
-        <div class="footer-line"></div>
+    </div>
+    <div class="links-wrapper">
+        <div class="links-container">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
 
+    </div>
+
+</div>
+<div class="footer-bar-bottom">
+    <p class="copy-right">
+        copyright © 2024 - Roy van Der Merwe
+    </p>
+</div>
     </footer>
-
-    <script src="main.js"></script>
-
+    <script src="/scripts/main.js"></script>
 </body>
 
 </html>
