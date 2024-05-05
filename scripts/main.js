@@ -21,11 +21,11 @@ window.addEventListener('scroll', function() {
   
   if (currentScrollTop > lastScrollTop) {
     // User is scrolling down
-    header.style.transform = 'translateY(-90%)';
+    header.style.transform = 'translateX(-50%) translateY(-90%)';
     hamburger.style.transform = 'translateX(150%)';
   } else {
     // User is scrolling up
-    header.style.transform = 'translateY(0)';
+    header.style.transform = 'translateX(-50%) translateY(0)';
     hamburger.style.transform = 'translateX(0)';
   }
   
