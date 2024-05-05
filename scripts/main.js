@@ -91,7 +91,7 @@ function observeElement(element, classNameIn, classNameOut, rootMargin) {
       element.classList.remove(classNameIn);
       element.classList.add(classNameOut);
     }
-  }, { rootMargin });
+  }, { rootMargin, threshold: [0] }); // Adjust the threshold as per your needs
 
   observer.observe(element);
 }
