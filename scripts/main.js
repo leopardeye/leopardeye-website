@@ -131,3 +131,17 @@ document.querySelectorAll('.hero-h5').forEach((img) => {
 // document.querySelectorAll('.img-shadow-shadow-animation').forEach((imgShadowBox) => {
 //   observeElement(imgShadowBox, 'opacity-in-animation', '0px 0px 0px 0px');
 // });
+
+
+const linkContainerItems = document.querySelectorAll('.link-container-items');
+
+linkContainerItems.forEach((item) => {
+  // Clone the node and all its children
+  const clone = item.cloneNode(true);
+
+  // Make the cloned content invisible to screen readers
+  clone.setAttribute('aria-hidden', 'true');
+
+  // Append the cloned node to the document
+  item.parentNode.appendChild(clone);
+});
