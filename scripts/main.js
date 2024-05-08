@@ -135,7 +135,7 @@ document.querySelectorAll('.hero-h5').forEach((img) => {
 
 const linkContainerItems = document.querySelectorAll('.link-container-items');
 
-linkContainerItems.forEach((item) => {
+linkContainerItems.forEach((item,) => {
   // Clone the node and all its children
   const clone = item.cloneNode(true);
 
