@@ -55,7 +55,14 @@ window.onload = function() {
                 method: 'POST',
                 body: data,
             }).then(() => {
-                window.location.replace('https://www.leopard-eye.com/thankyou/')
+            // Get the current location
+            let currentLocation = window.location.href;
+
+            // Replace '/contact/' with '/thankyou/'
+            let newLocation = currentLocation.replace('/contact/', '/thankyou/');
+
+            // Redirect to the new location
+            window.location.replace(newLocation);
             })
         })
     }); 
