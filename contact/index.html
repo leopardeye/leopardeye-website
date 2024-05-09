@@ -21,13 +21,16 @@
 </button>
 
 <div class="main-menu">
-    <ul>
-        <li><a href="/introduction/">An Introduction</a></li>
-        <li><a href="/portfolio/">Landscape & Wildlife</a></li>
-        <li><a href="/commercial/">Commercial Portfolio</a></li>
-        <li><a href="/about/">Behind the Lense</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/blog/">News</a></li>
+    <ul class="main-ul">
+        <li class="main-li"><a href="/introduction/">An Introduction</a></li>
+        <li class="main-li"><a href="/portfolio/">Landscape & Wildlife</a></li>
+        <li class="main-li"><a href="/commercial/">Commercial Portfolio</a></li>
+        <li class="main-li"><a href="/about/">Behind the Lense</a></li>
+        <li class="main-li"><a href="/contact/">Contact</a></li>
+        <li class="main-li "><a href="/blog/">News</a>
+    </ul>
+
+    </li>
     </ul>
 </div>
     </header>
@@ -92,7 +95,7 @@
 </section>
 <section class="body-container">
     <div class="contact-body-full-width-wrapper"></div>
-    <div class="body-ontent-wrapper">
+    <div class="body-content-wrapper">
         <div class="form-layout">
             <form action="https://formspree.io/f/xgejjodp" method="POST">
                 <!--  -->
@@ -132,6 +135,19 @@
 
     </div>
     <div class="contact-body-full-width-wrapper"></div>
+
+    <div class="body-content-wrapper">
+        <div class="form-layout">
+            <form id="FORM_ID_NewsLetter" method="POST"
+                action="https://script.google.com/macros/s/AKfycbyB32VosH72xpRnUhG-z2UuYg_PK4zPWzLTcQ2QXxZ9swuM6E9aWbEPzrHnxnXzMpORZQ/exec">
+                <input name="Name" type="text" placeholder="Name" required>
+                <input name="Email" type="email" placeholder="Email" required>
+                <input name="Region" type="text" placeholder="Country" required>
+                <input name="Company" type="text" placeholder="Company">
+                <button class="btn-1" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 
 </section>
 <section class="full-width-image-container">

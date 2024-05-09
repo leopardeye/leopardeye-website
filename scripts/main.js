@@ -1,6 +1,6 @@
 const mainMenu = document.querySelector('.main-menu');
 const header = document.querySelector('.site-logo'); // Select the header
-const hamburger = document.querySelector('.hamburger-menu'); // Select the hamburger
+const hamburger = document.querySelector('.hamburger-menu');
 
 let lastScrollTop = 0; // Declare lastScrollTop with let
 
@@ -9,12 +9,14 @@ hamburger.addEventListener('click', function() {
   mainMenu.classList.toggle('menu-active');
 });
 
+
 document.addEventListener('click', function(event) {
-  if (hamburger.classList.contains('active') && !hamburger.contains(event.target)) {
+  if (hamburger.classList.contains('active') && !hamburger.contains(event.target) && !event.target.closest('.dropdown')) {
     hamburger.classList.remove('active');
     mainMenu.classList.remove('menu-active');
   }
 });
+
 
 window.addEventListener('scroll', function() {
   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -41,6 +43,26 @@ window.onload = function() {
     copyrightElement.textContent = copyrightElement.textContent.replace('2024', currentYear);
   } 
 }
+
+
+    window.addEventListener("DOMContentLoaded", function() {
+        const yourForm = document.getElementById('FORM_ID_NewsLetter');
+        yourForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const data = new FormData(yourForm);
+            const action = e.target.action;
+            fetch(action, {
+                method: 'POST',
+                body: data,
+            }).then(() => {
+                window.location.replace('https://www.leopard-eye.com/thankyou/')
+            })
+        })
+    }); 
+
+
+
+
 
 // intro hero text animation
 // -------------------------
@@ -111,26 +133,6 @@ document.querySelectorAll('.animate-scale-1').forEach((img) => {
 document.querySelectorAll('.hero-h5').forEach((img) => {
   observeElement(img, 'line-animate-in', 'line-animate-out', '-150px 0px -150px 0px');
 });
-// document.querySelectorAll('.transition-left').forEach((textTransitionInLeft) => {
-//   observeElement(textTransitionInLeft, 'slide-in-animate', '0px 0px 0px 0px');
-// });
-
-// document.querySelectorAll('.map-location').forEach((mapLocation) => {
-//   mapLocation.style.animationDelay = `${(Math.random() * 0.5 + 0.5).toFixed(2)}s`;
-//   observeElement(mapLocation, 'opacity-in-animation');
-// });
-
-// document.querySelectorAll('.testimonial-wrapper').forEach((testimonialWrapper) => {
-//   observeElement(testimonialWrapper, 'scale-in-animate');
-// });
-
-// document.querySelectorAll('.testimonial-wrapper-2').forEach((testimonialWrapperTwo) => {
-//   observeElement(testimonialWrapperTwo, 'scale-in-animate');
-// });
-
-// document.querySelectorAll('.img-shadow-shadow-animation').forEach((imgShadowBox) => {
-//   observeElement(imgShadowBox, 'opacity-in-animation', '0px 0px 0px 0px');
-// });
 
 
 const linkContainerItems = document.querySelectorAll('.link-container-items');
